@@ -6,7 +6,7 @@ phases:
     commands:
       - echo Logging into Amazon ECR...
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-      - REPOSITORY_URI=public.ecr.aws/g5r6x7h4/raksul
+      - REPOSITORY_URI=135948456717.dkr.ecr.ap-northeast-1.amazonaws.com/raksul-private
   build:
     commands:
       - echo Build started on `date`
